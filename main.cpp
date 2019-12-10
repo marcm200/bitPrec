@@ -434,7 +434,7 @@ void formel_z3azc(const int bits,const double range) {
 		zt_var.getValueByChar('y')
 	);
 	
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 		
@@ -473,8 +473,7 @@ void formel_user(const int bits,const double range) {
 		}
 	}
 	
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
-	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
@@ -556,7 +555,7 @@ void formel_z2c(const int bits,const double range) {
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 		
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
 	fprintf(f,"  3 bits for the integer part\n");
@@ -622,7 +621,7 @@ void formel_z4azc(const int bits,const double range) {
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
 	fprintf(f,"  3 bits for the integer part\n");
@@ -690,7 +689,7 @@ void formel_z5azc(const int bits,const double range) {
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
 	fprintf(f,"  3 bits for the integer part\n");
@@ -734,7 +733,7 @@ void formel_z6azc(const int bits,const double range) {
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 		
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
 	fprintf(f,"  3 bits for the integer part\n");
@@ -827,7 +826,7 @@ void formel_tricz4b(const int bits,const double range) {
 	fprintf(f,"SCALE := (2*axis range) / (2^REFINEMENT LEVEL == voxels per axis)\n");
 	fprintf(f,"  := 2^-(REF-%i)",zt_var.exponentAxisRange);
 
-	fprintf(f,"\naxisrange = -%.20lg .. +%.20lg\n",-range,+range);
+	fprintf(f,"\naxisrange = %.20lg .. +%.20lg\n",-range,+range);
 
 	fprintf(f,"\n\nnotation: e.g. 3.21 = 24\n");
 	fprintf(f,"  3 bits for the integer part\n");
