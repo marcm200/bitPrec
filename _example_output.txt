@@ -3,7 +3,7 @@ x^2-y*y+d
 |x|<=4, max fracBits=25
 |y|<=4, max fracBits=25
 
-axisrange = --4 .. +4
+axisrange = -4 .. +4
 SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)
   := 2^-(REF-3)
 
