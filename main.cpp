@@ -1,3 +1,12 @@
+/*
+
+	bitPrecision analysis for julia-tsa-core and juliatsa3d-core formulas 
+	and user entered expression
+	
+	Marc Meidlinger, 2019
+
+*/
+
 #include "string.h"
 #include "stdlib.h"
 #include "stdio.h"
@@ -99,7 +108,7 @@ struct ZertifikatTerme {
 };
 
 struct ZertifikatVar {
-	double maxw[26]; // indiziert über ASCII-65
+	double maxw[26]; // indiziert Ã¼ber ASCII-65
 	int32_t fracbits[26];
 	char used[26];
 	int32_t exponentAxisRange;
