@@ -19,7 +19,7 @@ the code comes with no warranty.
 ## (1) Quick start
 
 Analyzing a real-valued expression. Results are written in file `_zertifikat.user_bit.precision_R4.txt`.
-<br>`bitPrec.exe "func=x* x-y *y+d" range=4 d=2,20``
+<br>`bitPrec.exe "func=x* x-y *y+d" range=4 d=2,20`
 
 Analyzing a complex built-in function, real and imaginary part separately. Results in respective text file.
 <br>`bitPrec.exe func=z3azc range=8`
