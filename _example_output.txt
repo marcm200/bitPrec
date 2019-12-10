@@ -1,0 +1,38 @@
+x^2-y*y+d
+|d|<=3, max fracBits=19
+|x|<=4, max fracBits=25
+|y|<=4, max fracBits=25
+
+axisrange = --4 .. +4
+SCALE := (2*axis range) / (2^REFINEMENT LEVEL == pixels per axis)
+  := 2^-(REF-3)
+
+notation: e.g. 3.21 = 24
+  3 bits for the integer part
+ 21 bits for the fractional part
+ 24 total bits
+
+
+===============================================================
+|f_new| <=
+	               |x^2|	||maxw= 16	5.0	2*(.(SCALE))
+	             + |y*y|	||maxw= 16	5.0	(.(SCALE))+(.(SCALE))
+	               + |d|	||maxw=  3	2.0	.19
+-----------------------------------------------------------
+		                ||maxw= 35	6.0	max(2*(.(SCALE)),(.(SCALE))+(.(SCALE)),.19)
+
+			REF 10			6.19 = 25	=> double
+			REF 11			6.19 = 25	=> double
+			REF 12			6.19 = 25	=> double
+			REF 13			6.20 = 26	=> double
+			REF 14			6.22 = 28	=> double
+			REF 15			6.24 = 30	=> double
+			REF 16			6.26 = 32	=> double
+			REF 17			6.28 = 34	=> double
+			REF 18			6.30 = 36	=> double
+			REF 19			6.32 = 38	=> double
+			REF 20			6.34 = 40	=> double
+			REF 21			6.36 = 42	=> double
+			REF 22			6.38 = 44	=> double
+			REF 23			6.40 = 46	=> double
+			REF 24			6.42 = 48	=> double
